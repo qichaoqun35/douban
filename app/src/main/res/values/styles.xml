@@ -8,4 +8,15 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--启动页面的主题-->
+    <style name="AppTheme.Launcher" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/launcher_color</item>
+        <item name="android:windowBackground">@drawable/launch_screen</item>
+    </style>
+
+    <!--主页面中toolbar的样式-->
+    <style name="tool_bar_style">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
 </resources>

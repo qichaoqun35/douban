@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--我的收藏和福利-->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/favorite"
+            android:icon="@drawable/ic_favorite_black_24dp"
+            android:title="@string/story">
+        </item>
+        <item
+            android:id="@+id/gift"
+            android:icon="@drawable/ic_gift_black_24dp"
+            android:title="@string/gift">
+        </item>
+    </group>
+
+    <!--日间或者是夜间模式-->
+    <group>
+        <item
+            android:id="@+id/sun_mode"
+            android:icon="@drawable/ic_sunny_black_24dp"
+            android:title="@string/day_mode"/>
+        <item
+            android:id="@+id/night_mode"
+            android:icon="@drawable/ic_night_black_24dp"
+            android:title="@string/night_mode"/>
+
+    </group>
+
+    <!--退出-->
+    <group>
+        <item
+            android:id="@+id/exit"
+            android:icon="@drawable/ic_exit_black_24dp"
+            android:title="@string/exit"/>
+    </group>
+
+</menu>

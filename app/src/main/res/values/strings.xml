@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">douban</string>
+    <string name="app_name">豆瓣</string>
+    <string name="story">收藏</string>
+    <string name="gift">福利</string>
+    <string name="day_mode">日间模式</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="exit">轻轻退出</string>
+    <string name="made_by_qichaoqun">made by qichaoqun</string>
+    <string name="qichaoqun">qichaoqun</string>
+    <string name="movie">电影</string>
+    <string name="animation">动画</string>
+    <string name="tv">电视剧</string>
+    <string name="top250">top250</string>
+    <string name="classify">分类</string>
 </resources>
