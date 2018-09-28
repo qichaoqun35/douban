@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
@@ -17,6 +17,63 @@
     <!--主页面中toolbar的样式-->
     <style name="tool_bar_style">
         <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/background_white</item>
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@android:color/transparent
+        </item>
+        <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <!-- 使用自定义样式-->
+        <item name="drawerArrowStyle">@style/AppTheme.MyDrawerArrowStyle</item>
+        <!-- Dialog使用自定义样式-->
+        <item name="alertDialogTheme">@style/AlertDialog</item>
+    </style>
+
+    <!-- Dialog使用自定义样式-->
+    <style name="AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/colorMovieText1</item>
+        <item name="android:background">@color/background_white</item>
+    </style>
+
+    <!--自定义 navigation drarwer 的样式-->
+    <style name="AppTheme.MyDrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/background_white</item>
+    </style>
+
+    <!--电影页面的主题的设置-->
+    <style name="movie_theme" parent="BaseTheme">
+        <item name="colorPrimary">@color/movie_color</item>
+        <item name="colorPrimaryDark">@color/movie_color</item>
+        <item name="colorAccent">@color/movie_color</item>
+    </style>
+
+    <style name="animation_theme" parent="BaseTheme">
+        <item name="colorPrimary">@color/animation_color</item>
+        <item name="colorPrimaryDark">@color/animation_color</item>
+        <item name="colorAccent">@color/animation_color</item>
+    </style>
+
+    <style name="tv_theme" parent="BaseTheme">
+        <item name="colorPrimary">@color/tv_color</item>
+        <item name="colorPrimaryDark">@color/tv_color</item>
+        <item name="colorAccent">@color/tv_color</item>
+    </style>
+
+    <style name="top250_theme" parent="BaseTheme">
+        <item name="colorPrimary">@color/top250_color</item>
+        <item name="colorPrimaryDark">@color/top250_color</item>
+        <item name="colorAccent">@color/top250_color</item>
+    </style>
+
+    <style name="classify_theme" parent="BaseTheme">
+        <item name="colorPrimary">@color/classify_color</item>
+        <item name="colorPrimaryDark">@color/classify_color</item>
+        <item name="colorAccent">@color/classify_color</item>
     </style>
 
 </resources>

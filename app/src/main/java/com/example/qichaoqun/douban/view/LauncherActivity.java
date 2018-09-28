@@ -27,7 +27,7 @@ public class LauncherActivity extends Activity {
         //initialDelay: 距离第一次返送间隔的时间
         //period: 间隔的时间（出第一次发送）
         //time_unit:事件单位，这里使用的是秒
-        Observable.intervalRange(0,1,3,3,TimeUnit.SECONDS)
+        Observable.intervalRange(0,1,2,3,TimeUnit.SECONDS)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribe(new Consumer<Long>() {

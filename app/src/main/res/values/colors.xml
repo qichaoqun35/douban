@@ -11,4 +11,10 @@
     <color name="colorTV">#FE9700</color>
     <color name="colorTop250">#00BBD3</color>
     <color name="colorTag">#785447</color>
+    <color name="movie_color">#009688</color>
+    <color name="animation_color">#F7BACF</color>
+    <color name="tv_color">#FE9700</color>
+    <color name="top250_color">#00BBD3</color>
+    <color name="classify_color">#785447</color>
+    <color name="colorMovieText1">#212121</color>
 </resources>
