@@ -12,4 +12,6 @@
     <string name="tv">电视剧</string>
     <string name="top250">top250</string>
     <string name="classify">分类</string>
+    <string name="no_content">加载的内容为空，请重新加载。。</string>
+    <string name="error">程序加载出错，请稍后重试。。。</string>
 </resources>

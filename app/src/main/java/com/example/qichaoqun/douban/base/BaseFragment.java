@@ -10,10 +10,13 @@ import android.view.ViewGroup;
 
 import com.example.qichaoqun.douban.R;
 import com.example.qichaoqun.douban.bean.MessageEvent;
+import com.example.qichaoqun.douban.view.iView.IMovieView;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
 import org.greenrobot.eventbus.ThreadMode;
+
+import java.util.ArrayList;
 
 import butterknife.ButterKnife;
 
@@ -40,7 +43,7 @@ public abstract class BaseFragment<V,T extends BasePresenter<V>> extends Fragmen
         initView();
         //得到p层引用
         presenter = getPresenter();
-        //绑定视图与 p 层
+        //绑定视图与 p 层，该this是子类的this，系统调用子类的OnCreateView,但是子类中没有，所有去父类中调用
         presenter.attachView(getContext(), (V) this);
         //标志初始化已经完成
         isPrepared = true;
