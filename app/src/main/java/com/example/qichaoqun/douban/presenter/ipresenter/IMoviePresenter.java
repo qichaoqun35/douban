@@ -1,4 +1,4 @@
-package com.example.qichaoqun.douban.presenter;
+package com.example.qichaoqun.douban.presenter.ipresenter;
 
 /**
  * @author qichaoqun

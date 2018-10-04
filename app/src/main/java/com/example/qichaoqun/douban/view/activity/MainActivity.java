@@ -1,6 +1,5 @@
-package com.example.qichaoqun.douban.view;
+package com.example.qichaoqun.douban.view.activity;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -151,7 +150,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(mIntent);
                 break;
             case R.id.sun_mode:
-
                 break;
             case R.id.night_mode:
                 break;

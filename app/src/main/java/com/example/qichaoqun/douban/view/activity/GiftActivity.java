@@ -1,4 +1,4 @@
-package com.example.qichaoqun.douban.view;
+package com.example.qichaoqun.douban.view.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;

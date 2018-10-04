@@ -8,12 +8,15 @@ import io.reactivex.disposables.Disposable;
  * @author qichaoqun
  * @date 2018/9/28
  */
-public class BasePresenter<V> {
+public abstract class BasePresenter<V> {
 
     protected V mView = null;
     protected Context mContext = null;
     protected Disposable mDisposable = null;
 
+    public void attachView(V view){
+        mView = view;
+    }
 
     public void attachView(Context context,V view){
         mView =  view;
@@ -23,6 +26,11 @@ public class BasePresenter<V> {
     public void detachView(){
         mView = null;
     }
+
+    /**
+     * Presenter销毁时调用
+     */
+    abstract protected void onDestroy();
 
     /**
      * 取消订阅

@@ -1,4 +1,4 @@
-package com.example.qichaoqun.douban.view;
+package com.example.qichaoqun.douban.view.activity;
 
 import android.app.Activity;
 import android.content.Intent;

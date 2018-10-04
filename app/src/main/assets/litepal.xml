@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="movie_db" />
+
+    <version value="1" />
+
+    <list>
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$RatingBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$ImagesBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$CastsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$CastsBean$AvatarsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$DirectorsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieSubjectsModel$DirectorsBean$AvatarsBeanX" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$RatingBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$ImagesBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$CastsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$CastsBean$AvatarsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$DirectorsBean" />
+        <mapping class="com.example.qichaoqun.douban.bean.MovieDetailModel$DirectorsBean$AvatarsBeanX" />
+    </list>
+
+
+</litepal>

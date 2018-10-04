@@ -1,15 +1,12 @@
 package com.example.qichaoqun.douban.presenter;
 
-
 import com.example.qichaoqun.douban.base.BasePresenter;
 import com.example.qichaoqun.douban.bean.MovieModel;
 import com.example.qichaoqun.douban.net_work.NetWork;
-import com.example.qichaoqun.douban.presenter.ipresenter.IMoviePresenter;
-import com.example.qichaoqun.douban.utils.TagData;
-import com.example.qichaoqun.douban.view.iView.IMovieView;
+import com.example.qichaoqun.douban.presenter.ipresenter.IAnimationPresenter;
+import com.example.qichaoqun.douban.view.iView.IAnimationView;
 
 import java.util.ArrayList;
-import java.util.Random;
 
 import io.reactivex.Observer;
 import io.reactivex.android.schedulers.AndroidSchedulers;
@@ -18,12 +15,12 @@ import io.reactivex.schedulers.Schedulers;
 
 /**
  * @author qichaoqun
- * @date 2018/9/28
+ * @date 2018/10/4
  */
-public class MoviePresenter extends BasePresenter<IMovieView> implements IMoviePresenter {
+public class AnimationPresenter extends BasePresenter<IAnimationView> implements IAnimationPresenter {
 
-    private String artist = null;
     private int start = 0;
+
     private Observer<MovieModel> mObserver = new Observer<MovieModel>() {
         @Override
         public void onSubscribe(Disposable d) {
@@ -51,23 +48,17 @@ public class MoviePresenter extends BasePresenter<IMovieView> implements IMovieP
         }
     };
 
-
     @Override
-    public void loadingData(boolean isRefresh) {
-        mView.showLoading();
-        if(isRefresh){
-            artist = TagData.artists[new Random().nextInt(36)];
-            start = 0;
-        }
-        NetWork.getDoubanApi().searchTag(artist,start,20)
-                .subscribeOn(Schedulers.io())
-                .observeOn(AndroidSchedulers.mainThread())
-                .subscribe(mObserver);
+    protected void onDestroy() {
+        unSubscribe();
     }
 
     @Override
-    protected void onDestroy() {
-        //释放掉内存
-        unSubscribe();
+    public void loadingData() {
+        mView.showLoading();
+       NetWork.getDoubanApi().searchTag("动漫", start, 20)
+               .subscribeOn(Schedulers.io())
+               .observeOn(AndroidSchedulers.mainThread())
+               .subscribe(mObserver);
     }
 }

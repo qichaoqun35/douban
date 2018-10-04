@@ -17,4 +17,8 @@
     <color name="top250_color">#00BBD3</color>
     <color name="classify_color">#785447</color>
     <color name="colorMovieText1">#212121</color>
+    <color name="colorMovieText2">#BDBDBD</color>
+    <color name="colorCelebrityText1">#4C4C4C</color>
+    <color name="colorCcc">#cccccc</color>
+    <color name="color999">#999999</color>
 </resources>
